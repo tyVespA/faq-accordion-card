@@ -65,7 +65,7 @@ p, h1, h2, h3, h4, h5, h6 {
    --softBlue: hsl(240, 73%, 65%);
 
    /* Dividers */
-   --lightGreyishBlue: hsl(240, 5%, 91%);
+   --lightGreyishBlue: hsl(0, 0%, 90%);
 }
 
 body {
@@ -83,27 +83,42 @@ body {
    background-color: white;
    display: flex;
    align-items: center;
+   padding: 60px;
+
+   height: 426px;
+   width: 700px;
+   border-radius: 30px;
 }
 
-.container--right {
+.container--left {
    width: 50%;
 }
 
+.container--left--images {
+   
+}
 
 .bg-pattern-desktop {
    background-image: url(images/bg-pattern-desktop.svg);
    background-size: contain;
    background-repeat: no-repeat;
-   width: 200px;
-   height: 200px;
+   width: 350px;
+   height: 350px;
+
+   position: relative;
+   top: 400px;
+   left: -60px;
 }
 
 .illustration-woman {
    background-image: url(images/illustration-woman-online-desktop.svg);
    background-size: contain;
    background-repeat: no-repeat;
-   width: 200px;
-   height: 200px;
+   width: 350px;
+   height: 350px;
+
+   position: relative;
+   left: -120px;
 }
 
 .illustration-box-desktop {
@@ -112,4 +127,61 @@ body {
    background-repeat: no-repeat;
    width: 200px;
    height: 200px;
+
+   position: relative;
+   top: -220px;
+   left: -60px;
+}
+
+.container--right {
+   width: 50%;
+}
+
+h1 {
+   color: var(--veryDarkDesaturatedBlue);
+   margin-bottom: 30px;
+}
+
+hr {
+   margin: 10px 0;
+   color: var(--lightGreyishBlue)
+}
+
+.question {
+   border-bottom: 1px solid var(--lightGreyishBlue);
+   padding-bottom: 5px;
+   margin-bottom: 5px;
+}
+
+.accordion {
+   margin-bottom: 5px;
+   color: var(--veryDarkGreyishBlue);
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.accordion:hover {
+   color: var(--softRed);
+   cursor: pointer;
+}
+
+.accordion:active {
+   font-weight: 700;
+   color: var(--veryDarkDesaturatedBlue)
+}
+
+.arrow {
+   background-image: url(/images/icon-arrow-down.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 10px;
+   height: 10px;
+
+   margin-right: 10px;
+}
+
+.panel {
+   font-size: 0.8em;
+   display: none;
 }
