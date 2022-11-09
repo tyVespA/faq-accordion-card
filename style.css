@@ -79,61 +79,83 @@ body {
    background-image: linear-gradient(var(--softViolet), var(--softBlue));
 }
 
+.box-container {
+   height: 426px;
+   width: 350px;
+   position: relative;
+   left: -350px;
+}
+
 .container {
    background-color: white;
    display: flex;
    align-items: center;
-   padding: 60px;
 
    height: 426px;
    width: 700px;
    border-radius: 30px;
 
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
 }
 
 .container--left {
    width: 50%;
 }
 
-.bg-pattern-desktop {
-   background-image: url(images/bg-pattern-desktop.svg);
-   background-size: contain;
-   background-repeat: no-repeat;
-   width: 350px;
-   height: 350px;
-
+.container--left--images {
+   margin-top: 152px;
+   height: 426px;
    position: relative;
-   top: -70px;
-   left: -120px;
-}
-
-.illustration-woman {
-   background-image: url(images/illustration-woman-online-desktop.svg);
-   background-size: contain;
-   background-repeat: no-repeat;
-   width: 350px;
-   height: 350px;
-
-   position: relative;
-   top: 300px;
-   left: -120px;
+   overflow: hidden;
 }
 
 .illustration-box-desktop {
    background-image: url(images/illustration-box-desktop.svg);
    background-size: contain;
    background-repeat: no-repeat;
-   width: 200px;
-   height: 200px;
-
+   width: 150px;
+   height: 150px;
    position: relative;
-   top: -220px;
-   left: -60px;
+   top: -269px;
+   left: -78px;
+}
+
+.transform {
+   transition: all 1s ease;
+}
+
+.transform-active {
+   left: -120px;
+}
+
+.bg-pattern-desktop {
+   background-image: url(images/bg-pattern-desktop.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 700px;
+   height: 7000px;
+
+   position: absolute;
+   left: -395px;
+   top: -190px;
+}
+
+.illustration-woman {
+   background-image: url(images/illustration-woman-online-desktop.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 370px;
+   height: 370px;
+
+   position: absolute;
+   left: -66px;
+   top: 53px;
 }
 
 .container--right {
    width: 50%;
+   padding: 60px 60px 60px 0;
 }
 
 h1 {

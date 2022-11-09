@@ -1,4 +1,6 @@
-const acc = document.getElementsByClassName("accordion")
+const acc = document.getElementsByClassName("accordion");
+const accordions = document.querySelectorAll(".accordion");
+const box = document.querySelector(".illustration-box-desktop");
 let i;
 
 for (i = 0; i < acc.length; i++) {
@@ -13,6 +15,16 @@ for (i = 0; i < acc.length; i++) {
       }
    })
 }
+
+accordions.forEach((accordion) => {
+   accordion.addEventListener("mouseover", () => {
+   box.classList.toggle("transform-active")
+   });
+   accordion.addEventListener("mouseout", () => {
+      box.classList.toggle("transform-active")
+      });
+});
+
 
 /* TODO
       position panel-left images
