@@ -79,13 +79,6 @@ body {
    background-image: linear-gradient(var(--softViolet), var(--softBlue));
 }
 
-.box-container {
-   height: 426px;
-   width: 350px;
-   position: relative;
-   left: -350px;
-}
-
 .container {
    background-color: white;
    display: flex;
@@ -96,7 +89,6 @@ body {
    border-radius: 30px;
 
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   
 }
 
 .container--left {
@@ -211,6 +203,54 @@ hr {
 
 /* Mobile layout */
 
-@media screen {
+@media screen and (max-width: 850px) {
+   .container {
+      flex-direction: column;
+      width: 300px;
+      height: auto;
+   }
+   .container--left {
+      width: 100%;
+   }
+   .container--left--images {
+      height: 150px;
+      position: absolute;
+      margin: 0;
+      overflow: visible;
+   }
+   .illustration-box-desktop{
+      height: 100px;
+      width: 100px;
+      position: relative;
+      top: -32px;
+      left: 25px;
+   }
+   .illustration-woman {
+      width: 225px;
+      height: 225px;
+      position: relative;
+      top: -90px;
+      left: 36px;
+   }
+   .bg-pattern-desktop {
+      width: 225px;
+      height: 225px;
+      position: absolute;
+      top: -110px;
+      left: 36px;
+   }
+   .container--right {
+      width: 100%;
+      padding: 30px;
+   }
+   h1 {
+      text-align: center;
+   }
+   .transform {
+      transition: all 1s ease;
+   }
    
+   .transform-active {
+      top: -50px;
+   }
 }
