@@ -185,7 +185,7 @@ hr {
 }
 
 .arrow {
-   background-image: url(/images/icon-arrow-down.svg);
+   background-image: url(images/icon-arrow-down.svg);
    background-size: contain;
    background-repeat: no-repeat;
    width: 10px;
